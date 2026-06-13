@@ -14,58 +14,44 @@
         nav a:hover { opacity: 1; text-decoration: underline; }
         nav a.active { font-weight: bold; opacity: 1; }
         
-        main { max-width: 850px; margin: 40px auto; padding: 0 20px; }
-
-        /* Tarjeta de Gancho Superior */
-        .promo-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-top: 4px solid #2b6cb0;
-            padding: 30px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .promo-card h2 { color: #1a365d; font-size: 1.8em; margin-top: 0; margin-bottom: 15px; }
-        .promo-card p { color: #4a5568; font-size: 1.2em; margin-bottom: 20px; }
-        .promo-card a { color: #2b6cb0; font-weight: bold; text-decoration: none; font-size: 1.1em; }
-        .promo-card a:hover { text-decoration: underline; }
-
-        /* Título Principal del Programa */
-        .program-title { color: #1a365d; font-size: 2em; margin-bottom: 25px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        main { max-width: 800px; margin: 40px auto; padding: 0 20px; text-align: left; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 40px; }
         
-        .section-label { font-weight: bold; color: #2d3748; font-size: 1.1em; margin-top: 20px; }
+        h2 { color: #1a365d; font-size: 2em; margin-top: 0; margin-bottom: 10px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        .subtitle { color: #4a5568; font-size: 1.1em; margin-bottom: 40px; }
         
-        /* Lista de Pasos (Hoja de Ruta) */
-        .roadmap-list { list-style: none; padding: 0; margin: 20px 0; }
-        .roadmap-list li { background: white; margin-bottom: 12px; padding: 15px 20px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); border-left: 4px solid #2b6cb0; }
-        .roadmap-list strong { color: #2c5282; }
-
-        /* Caja de Tarifas (A consultar / Personalizado para Empresas) */
+        .enterprise-section { margin-bottom: 35px; padding-bottom: 25px; border-bottom: 1px dashed #e2e8f0; }
+        .enterprise-section:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        
+        h3 { color: #2c5282; font-size: 1.4em; margin-top: 0; margin-bottom: 10px; }
+        
+        .section-label { font-weight: bold; color: #2d3748; }
+        
+        /* Caja de Tarifas y Cuotas */
         .price-box {
             display: inline-block;
             background-color: #e2e8f0;
             color: #1a202c;
             font-weight: bold;
-            padding: 12px 20px;
+            padding: 10px 18px;
             border-radius: 6px;
-            font-size: 1.1em;
-            margin-top: 25px;
-            margin-bottom: 25px;
+            font-size: 1em;
+            margin-top: 10px;
         }
 
-        /* Alerta de Consultoría Gratuita */
-        .pilot-alert {
+        /* Alerta inferior de contacto estratégico */
+        .contact-alert {
             background-color: #ebf8ff;
             border: 1px solid #bee3f8;
             border-radius: 6px;
             padding: 20px;
             color: #2b6cb0;
             font-size: 1.1em;
-            margin-top: 20px;
+            margin-top: 40px;
+            font-weight: bold;
+            text-align: center;
         }
 
-        footer { text-align: center; padding: 20px; color: #718096; font-size: 0.9em; margin-top: 60px; }
+        footer { text-align: center; padding: 20px; color: #718096; font-size: 0.9em; margin-top: 60px; border-top: 1px solid #e2e8f0; }
     </style>
 </head>
 <body>
@@ -81,33 +67,35 @@
     </header>
 
     <main>
-        <div class="promo-card">
-            <h2>¿Quieres escalar tu negocio?</h2>
-            <p>Descubre el Programa de Consultoría Estratégica para Equipos.</p>
-            <a href="#programa">Ver Soluciones &rarr;</a>
+        <h2>Para Empresas: Consultoría Estratégica y Desarrollo Organizacional</h2>
+        <p class="subtitle">Soluciones y planes estructurados según el volumen, equipo y escala de tu organización.</p>
+        
+        <div class="enterprise-section">
+            <h3>👤 1. Estructura de Empresa Individual</h3>
+            <p><span class="section-label">A quién va dirigido:</span> Unipersonales, autónomos consolidados o sociedades de un único miembro que buscan optimizar su modelo de negocio y delegar procesos iniciales.</p>
+            <div class="price-box">
+                Cuota: Menos de 10 empleados — Tarifa Base Corporativa
+            </div>
         </div>
 
-        <div id="programa">
-            <h2 class="program-title">Para Empresas: Consultoría Estratégica y Desarrollo Corporativo</h2>
-            
-            <p><span class="section-label">A quién va dirigido:</span> Pymes, negocios en marcha y sociedades que experimentan problemas de organización, estancamiento en ventas o necesitan digitalizar sus operaciones.</p>
-            
-            <p class="section-label">Líneas de Actuación Estratégica:</p>
-            
-            <ul class="roadmap-list">
-                <li><strong>Área 1:</strong> Optimización y Estructura Organizacional (Eliminación de cuellos de botella).</li>
-                <li><strong>Área 2:</strong> Digitalización Integral y Despliegue de Estrategia Web Corporativa.</li>
-                <li><strong>Área 3:</strong> Automatización de Procesos y Sistemas de Atracción de Clientes.</li>
-                <li><strong>Área 4:</strong> Capacitación en Liderazgo y Alineación de Equipos de Trabajo.</li>
-            </ul>
-
+        <div class="enterprise-section">
+            <h3>👥 2. Estructura de Varias Personas (PYMES)</h3>
+            <p><span class="section-label">A quién va dirigido:</span> Pequeñas empresas en crecimiento y equipos de trabajo que sufren problemas de comunicación interna, duplicidad de tareas o necesitan digitalizar sus operaciones grupales.</p>
             <div class="price-box">
-                Tarifa: Presupuesto a medida según los objetivos y tamaño del equipo
+                Cuota: Menos de 50 empleados — Plan de Crecimiento y Escalabilidad
             </div>
+        </div>
 
-            <div class="pilot-alert">
-                📊 <strong>Sesión de Diagnóstico Inicial:</strong> Agenda una primera llamada estratégica de 30 minutos 100% gratuita para evaluar tu caso.
+        <div class="enterprise-section">
+            <h3>🏢 3. Estructura de Varias Empresas / Corporaciones</h3>
+            <p><span class="section-label">A quién va dirigido:</span> Grupos empresariales, sociedades complejas o marcas consolidadas que requieren consultorías integrales de liderazgo, auditorías organizacionales macro y automatizaciones avanzadas de sistemas.</p>
+            <div class="price-box">
+                Cuota: Más de 50 empleados — Consultoría Integral a Medida
             </div>
+        </div>
+
+        <div class="contact-alert">
+            📊 Agenda una sesión de diagnóstico inicial de 30 minutos 100% gratuita para evaluar la cuota exacta y los requerimientos de tu equipo.
         </div>
     </main>
 
