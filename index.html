@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofía Emprendimiento</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f7fafc; }
+        
+        /* Menú de navegación superior corregido con las nuevas páginas */
+        header { background-color: #1a365d; color: white; padding: 20px; text-align: center; }
+        header h1 { margin: 0 0 15px 0; font-size: 1.8em; font-weight: bold; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.1em; opacity: 0.85; }
+        nav a:hover { opacity: 1; text-decoration: underline; }
+        nav a.active { font-weight: bold; opacity: 1; }
+        
+        /* Sección principal con la imagen de fondo oscuro de la oficina */
+        .hero { 
+            background: linear-gradient(rgba(26, 54, 93, 0.85), rgba(26, 54, 93, 0.85)), url('image_e1c278.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px 160px 20px;
+            text-align: center;
+        }
+        .hero h2 { font-size: 2.5em; margin-bottom: 20px; font-weight: bold; }
+        .hero p { font-size: 1.2em; max-width: 900px; margin: 0 auto 30px auto; opacity: 0.95; line-height: 1.6; }
+        
+        /* Botón azul de valoración gratuita */
+        .btn-main { display: inline-block; background-color: #3182ce; color: white; padding: 14px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn-main:hover { background-color: #2b6cb0; }
+        
+        .italic-quote { font-style: italic; margin-top: 20px; opacity: 0.85; font-size: 1.15em; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.5; }
+        
+        /* Contenedor flotante para las dos tarjetas blancas inferiores */
+        .cards-container { max-width: 1000px; margin: -100px auto 60px auto; padding: 0 20px; display: flex; gap: 30px; justify-content: center; position: relative; z-index: 10; }
+        
+        .card { background: white; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); padding: 40px 30px; text-align: center; flex: 1; max-width: 450px; box-sizing: border-box; }
+        .card h3 { color: #1a365d; font-size: 1.4em; margin-top: 0; margin-bottom: 15px; font-weight: bold; }
+        .card p { color: #4a5568; font-size: 1.1em; line-height: 1.6; margin-bottom: 30px; }
+        
+        /* Enlaces de los botones de las tarjetas */
+        .card a { color: #3182ce; font-weight: bold; text-decoration: none; font-size: 1.1em; display: inline-block; }
+        .card a:hover { text-decoration: underline; }
+        
+        footer { text-align: center; padding: 30px; color: #718096; font-size: 0.9em; border-top: 1px solid #e2e8f0; background-color: white; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sofía Emprendimiento</h1>
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+            <a href="individual.html">Individual</a>
+            <a href="empresarial.html">Empresarial</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Transformación Integral y Resiliencia para Personas y Organizaciones</h2>
+        <p>Ayudo a profesionales en situación de estancamiento a recuperar el rumbo, y a empresas a diagnosticar y optimizar sus sistemas internos para mejorar el rendimiento y el clima laboral.</p>
+        
+        <a href="#" class="btn-main">Reserva tu sesión de valoración gratuita</a>
+        
+        <p class="italic-quote">"Intervención socioeducativa y estratégica. Sin humo corporativo, basada en hechos e hitos medibles."</p>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <h3>¿Eres un profesional estancado?</h3>
+            <p>Descubre el Programa de Transformación de 3 Meses.</p>
+            <a href="individual.html">Ver Programa &rarr;</a>
+        </div>
+
+        <div class="card">
+            <h3>¿Eres una empresa u organización?</h3>
+            <p>Descubre el Servicio de Análisis de Sistemas Internos.</p>
+            <a href="empresarial.html">Ver Servicio &rarr;</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Sofía Emprendimiento. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

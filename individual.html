@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios - Individual</title>
+    <style>
+        :root { --secondary: #3498db; --primary: #2c3e50; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; scroll-behavior: smooth; }
+        body { background-color: #fcfcfc; color: #333; line-height: 1.6; }
+        nav { background: #fff; padding: 15px 20px; display: flex; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;}
+        nav ul { list-style: none; display: flex; gap: 30px; }
+        nav ul li a { text-decoration: underline; color: var(--primary); font-weight: bold; }
+        nav ul li a:hover { color: var(--secondary); }
+        .container { max-width: 800px; margin: 50px auto; padding: 20px; }
+        h1 { text-align: center; color: var(--primary); margin-bottom: 40px; }
+        .service { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 40px; scroll-margin-top: 90px;}
+        .service h2 { color: var(--primary); margin-bottom: 15px; border-bottom: 2px solid #edf2f7; padding-bottom: 10px; }
+        ul, ol { padding-left: 20px; margin: 15px 0; }
+        li { margin-bottom: 8px; }
+        .price { font-size: 18px; font-weight: bold; color: var(--primary); margin-top: 10px; display: inline-block; background: #edf2f7; padding: 6px 12px; border-radius: 4px; }
+        .promo { background: #fff3cd; color: #856404; padding: 15px; margin-top: 20px; font-weight: bold; border-radius: 5px; border: 1px solid #ffeeba; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="individual.html">Individual</a></li>
+            <li><a href="empresarial.html">Empresarial</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Servicios Individuales</h1>
+
+        <div id="particulares" class="service">
+            <h2>Para Particulares: Programa de Transformación Integral (Método E')</h2>
+            <p><strong>A quién va dirigido:</strong> Profesionales bloqueados, con síndrome del impostor, miedo al rechazo o patrones de inferioridad que sabotean su éxito laboral.</p>
+            <h3 style="margin-top: 20px; font-size: 18px;">La Hoja de Ruta (6 Pasos en 3 meses):</h3>
+            <ol>
+                <li><strong>Paso 1:</strong> Auditoría 360 y Desmontando Bloqueos.</li>
+                <li><strong>Paso 2:</strong> Arqueología del Talento (Tu Mapa de Resiliencia).</li>
+                <li><strong>Paso 3:</strong> Filtro de Propósito (Tu Diana de Objetivos).</li>
+                <li><strong>Paso 4:</strong> Diseño del Plan por Hitos.</li>
+                <li><strong>Paso 5:</strong> Gestión del Fracaso y la Procrastinación.</li>
+                <li><strong>Paso 6:</strong> Entrega de la Brújula de Autogestión.</li>
+            </ol>
+            <span class="price">Tarifa: 720 € (o 3 cuotas de 240 €/mes)</span>
+            <div class="promo">🚀 Lanzamiento Piloto: 2 Plazas gratuitas a cambio de testimonio real (Convocatoria Septiembre).</div>
+        </div>
+    </div>
+
+</body>
+</html>
