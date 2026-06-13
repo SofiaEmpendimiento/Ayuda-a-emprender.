@@ -2,19 +2,60 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sobre mí - Mi Historia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí | Sofía Orientación - Intervención Estratégica</title>
     <style>
-        :root { --primary: #2c3e50; --secondary: #3498db; --text: #333; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
-        body { background-color: #fcfcfc; color: var(--text); line-height: 1.6; }
-        nav { background: #fff; padding: 15px 20px; display: flex; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        nav ul { list-style: none; display: flex; gap: 30px; }
-        nav ul li a { text-decoration: underline; color: var(--primary); font-weight: bold; }
+        :root { 
+            --primary: #1a202c; 
+            --secondary: #2b6cb0; 
+            --accent: #c0392b;
+            --bg: #f7fafc;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        
+        body { background-color: var(--bg); color: #333; line-height: 1.8; }
+        
+        /* Navegación Profesional */
+        nav { background: #fff; padding: 1.2rem; display: flex; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        nav ul { list-style: none; display: flex; gap: 40px; }
+        nav ul li a { text-decoration: underline; color: var(--primary); font-weight: 700; font-size: 15px; letter-spacing: 0.5px; }
         nav ul li a:hover { color: var(--secondary); }
-        .container { max-width: 800px; margin: 50px auto; padding: 20px; }
-        h1 { text-align: center; color: var(--primary); margin-bottom: 40px; }
-        .box { background: white; padding: 25px; border-left: 4px solid var(--secondary); box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px; border-radius: 4px; }
-        .box h2 { color: var(--primary); margin-bottom: 10px; }
+
+        .container { max-width: 900px; margin: 60px auto; padding: 0 30px; }
+
+        /* Encabezado de Sección */
+        .header-profile { text-align: center; margin-bottom: 60px; }
+        .header-profile h1 { font-size: 38px; color: var(--primary); margin-bottom: 15px; font-weight: 800; }
+        .header-profile .subtitle { font-size: 20px; color: var(--secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Bloques de Contenido Profesional */
+        .content-section { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); margin-bottom: 30px; }
+        
+        .biography { font-size: 18px; margin-bottom: 40px; text-align: justify; border-bottom: 1px solid #edf2f7; padding-bottom: 30px; }
+
+        .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 30px; }
+        
+        .pillar-card { background: #f8fafc; padding: 25px; border-radius: 8px; border-top: 5px solid var(--secondary); }
+        .pillar-card h3 { font-size: 19px; color: var(--primary); margin-bottom: 12px; }
+        .pillar-card p { font-size: 15px; color: #4a5568; }
+
+        /* Frase de Autoridad */
+        .promise-quote { 
+            background: var(--primary); 
+            color: white; 
+            padding: 40px; 
+            border-radius: 12px; 
+            text-align: center; 
+            margin-top: 50px;
+            position: relative;
+        }
+        .promise-quote p { font-size: 22px; font-style: italic; font-weight: 300; }
+        .promise-quote strong { color: #63b3ed; }
+
+        @media (max-width: 768px) {
+            .pillars { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -29,21 +70,38 @@
     </nav>
 
     <div class="container">
-        <h1>Sobre mí</h1>
+        <header class="header-profile">
+            <span class="subtitle">Perfil Profesional</span>
+            <h1>Trayectoria y Metodología</h1>
+        </header>
         
-        <div class="box">
-            <h2>Mi Enfoque</h2>
-            <p>Uno mis diplomaturas en Trabajo Social y Educación Social con más de una década de experiencia en consultoría y proyectos de inserción laboral en Cádiz.</p>
+        <div class="content-section">
+            <p class="biography">
+                Mi trayectoria profesional está cimentada en la <strong>intervención directa y el análisis de sistemas complejos</strong>. Con más de una década liderando proyectos de consultoría e inserción laboral en la provincia de Cádiz, he desarrollado una metodología propia que fusiona el rigor académico del Trabajo Social y la Educación Social con la agilidad estratégica necesaria en el entorno corporativo actual.
+            </p>
+
+            <div class="pillars">
+                <div class="pillar-card">
+                    <h3>Formación Especializada</h3>
+                    <p>Diplomada en Trabajo Social y Educación Social, mi enfoque se aleja de la teoría de manual para centrarse en soluciones basadas en la realidad socio-productiva de las organizaciones.</p>
+                </div>
+                <div class="pillar-card">
+                    <h3>Agudeza Analítica</h3>
+                    <p>Poseo una agudeza visual entrenada para detectar dinámicas invisibles, liderazgos disfuncionales y bloqueos de comunicación que merman la productividad de los equipos.</p>
+                </div>
+                <div class="pillar-card">
+                    <h3>Resiliencia Sistémica</h3>
+                    <p>Entiendo la resiliencia no como un concepto abstracto, sino como una herramienta operativa. Mi propia historia personal es el aval de mi capacidad para transformar crisis en estructuras sólidas.</p>
+                </div>
+                <div class="pillar-card">
+                    <h3>Enfoque Cádiz</h3>
+                    <p>Experta en el diagnóstico del clima laboral y sistemas organizativos locales, adaptando estrategias globales a las particularidades del tejido empresarial de nuestra zona.</p>
+                </div>
+            </div>
         </div>
-        
-        <div class="box">
-            <h2>Mi Historia</h2>
-            <p>Tengo una alta capacidad de análisis y agudeza visual para captar dinámicas que otros pasan por alto. Entiendo la resiliencia perfectamente porque forma parte de mi propia historia de vida.</p>
-        </div>
-        
-        <div class="box" style="border-left-color: #e74c3c;">
-            <h2>Mi Promesa</h2>
-            <p><strong>"No te enseño teoría de manual; te entrego herramientas testadas en el barro de la realidad social y laboral."</strong></p>
+
+        <div class="promise-quote">
+            <p>"No diseño estrategias basadas en promesas vacías; entrego <strong>herramientas de alta precisión</strong> testadas en la realidad social más exigente."</p>
         </div>
     </div>
 
