@@ -3,55 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Individuales - Sofía Emprendimiento</title>
+    <title>Servicios Solo - Sofía Emprendimiento</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f7fafc; }
+        
+        /* Menú superior unificado */
         header { background-color: #1a365d; color: white; padding: 20px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.1em; }
-        nav a:hover { text-decoration: underline; }
-        main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-        .services-header { text-align: center; margin-bottom: 40px; }
-        .services-header h2 { color: #1a365d; font-size: 2.2em; }
-        .services-grid { display: block; }
-        .service-card { background: white; border-left: 5px solid #319795; padding: 20px; margin-bottom: 20px; border-radius: 0 8px 8px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .service-card h3 { color: #2c5282; margin-top: 0; }
-        footer { text-align: center; padding: 20px; color: #718096; font-size: 0.9em; margin-top: 40px; }
+        header h1 { margin: 0 0 15px 0; font-size: 1.8em; font-weight: bold; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.1em; opacity: 0.85; }
+        nav a:hover { opacity: 1; text-decoration: underline; }
+        nav a.active { font-weight: bold; opacity: 1; }
+        
+        main { max-width: 850px; margin: 40px auto; padding: 0 20px; }
+
+        /* Tarjeta de Gancho Superior */
+        .promo-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #3182ce;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .promo-card h2 { color: #1a365d; font-size: 1.8em; margin-top: 0; margin-bottom: 15px; }
+        .promo-card p { color: #4a5568; font-size: 1.2em; margin-bottom: 20px; }
+        .promo-card a { color: #3182ce; font-weight: bold; text-decoration: none; font-size: 1.1em; }
+        .promo-card a:hover { text-decoration: underline; }
+
+        /* Título Principal del Programa */
+        .program-title { color: #1a365d; font-size: 2em; margin-bottom: 25px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        
+        .section-label { font-weight: bold; color: #2d3748; font-size: 1.1em; margin-top: 20px; }
+        
+        /* Lista de Pasos (Hoja de Ruta) */
+        .roadmap-list { list-style: none; padding: 0; margin: 20px 0; }
+        .roadmap-list li { background: white; margin-bottom: 12px; padding: 15px 20px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); border-left: 4px solid #319795; }
+        .roadmap-list strong { color: #2c5282; }
+
+        /* Caja de Tarifas */
+        .price-box {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #1a202c;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        /* Alerta de Lanzamiento Piloto */
+        .pilot-alert {
+            background-color: #fef3c7;
+            border: 1px solid #fde68a;
+            border-radius: 6px;
+            padding: 20px;
+            color: #92400e;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 20px; color: #718096; font-size: 0.9em; margin-top: 60px; }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Sofía Emprendimiento</h1>
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="solo.html"><strong>Servicios Solo</strong></a>
+            <a href="servicios.html">Servicios</a>
+            <a href="solo.html" class="active">Servicios Solo</a>
             <a href="empresas.html">Servicios Empresas</a>
         </nav>
     </header>
 
     <main>
-        <section class="services-header">
-            <h2>Mentoría y Herramientas para Emprendedores</h2>
-            <p style="font-size: 1.2em; color: #4a5568;">El camino del emprendedor independiente no tiene por qué ser solitario. Aquí encuentras el apoyo que necesitas para definir tu propósito y estructurar tu idea.</p>
-        </section>
+        <div class="promo-card">
+            <h2>¿Quieres encontrar tu rumbo?</h2>
+            <p>Descubre el Programa de Transformación de 3 Meses.</p>
+            <a href="#programa">Ver Programa &rarr;</a>
+        </div>
 
-        <section class="services-grid">
-            <div class="service-card">
-                <h3>1. Definición de Propósito y Modelo de Negocio</h3>
-                <p>Sesiones uno a uno para aclarar qué quieres transmitir al mundo con tu marca y cómo monetizarlo de manera viable.</p>
+        <div id="programa">
+            <h2 class="program-title">Para Particulares: Programa de Transformación Integral (Método E')</h2>
+            
+            <p><span class="section-label">A quién va dirigido:</span> Profesionales bloqueados, con síndrome del impostor, miedo al rechazo o patrones de inferioridad que sabotean su éxito laboral.</p>
+            
+            <p class="section-label">La Hoja de Ruta (6 Pasos en 3 meses):</p>
+            
+            <ul class="roadmap-list">
+                <li><strong>Paso 1:</strong> Auditoría 360 y Desmontando Bloqueos.</li>
+                <li><strong>Paso 2:</strong> Arqueología del Talento (Tu Mapa de Resiliencia).</li>
+                <li><strong>Paso 3:</strong> Filtro de Propósito (Tu Diana de Objetivos).</li>
+                <li><strong>Paso 4:</strong> Diseño del Plan por Hitos.</li>
+                <li><strong>Paso 5:</strong> Gestión del Fracaso y la Procrastinación.</li>
+                <li><strong>Paso 6:</strong> Entrega de la Brújula de Autogestión.</li>
+            </ul>
+
+            <div class="price-box">
+                Tarifa: 720 € (o 3 cuotas de 240 €/mes)
             </div>
-            <div class="service-card">
-                <h3>2. Plan de Acción desde Cero</h3>
-                <p>Creamos una hoja de ruta con pasos sencillos y metas semanales para que dejes atrás de una vez por todas la parálisis por análisis.</p>
+
+            <div class="pilot-alert">
+                🚀 <strong>Lanzamiento Piloto:</strong> 2 Plazas gratuitas a cambio de testimonio real (Convocatoria Septiembre).
             </div>
-            <div class="service-card">
-                <h3>3. Identidad y Herramientas Básicas</h3>
-                <p>Guía práctica personalizada para aprender a gestionar de manera eficiente tu tiempo, tus primeras finanzas y el alcance de tu marca personal.</p>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer>
         &copy; 2026 Sofía Emprendimiento. Todos los derechos reservados.
     </footer>
+
 </body>
 </html>
