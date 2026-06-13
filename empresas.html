@@ -3,55 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios para Empresas - Sofía Emprendimiento</title>
+    <title>Servicios Empresas - Sofía Emprendimiento</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f7fafc; }
+        
+        /* Menú superior unificado */
         header { background-color: #1a365d; color: white; padding: 20px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.1em; }
-        nav a:hover { text-decoration: underline; }
-        main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-        .services-header { text-align: center; margin-bottom: 40px; }
-        .services-header h2 { color: #1a365d; font-size: 2.2em; }
-        .services-grid { display: block; }
-        .service-card { background: white; border-left: 5px solid #2b6cb0; padding: 20px; margin-bottom: 20px; border-radius: 0 8px 8px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .service-card h3 { color: #2c5282; margin-top: 0; }
-        footer { text-align: center; padding: 20px; color: #718096; font-size: 0.9em; margin-top: 40px; }
+        header h1 { margin: 0 0 15px 0; font-size: 1.8em; font-weight: bold; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.1em; opacity: 0.85; }
+        nav a:hover { opacity: 1; text-decoration: underline; }
+        nav a.active { font-weight: bold; opacity: 1; }
+        
+        main { max-width: 850px; margin: 40px auto; padding: 0 20px; }
+
+        /* Tarjeta de Gancho Superior */
+        .promo-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #2b6cb0;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .promo-card h2 { color: #1a365d; font-size: 1.8em; margin-top: 0; margin-bottom: 15px; }
+        .promo-card p { color: #4a5568; font-size: 1.2em; margin-bottom: 20px; }
+        .promo-card a { color: #2b6cb0; font-weight: bold; text-decoration: none; font-size: 1.1em; }
+        .promo-card a:hover { text-decoration: underline; }
+
+        /* Título Principal del Programa */
+        .program-title { color: #1a365d; font-size: 2em; margin-bottom: 25px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        
+        .section-label { font-weight: bold; color: #2d3748; font-size: 1.1em; margin-top: 20px; }
+        
+        /* Lista de Pasos (Hoja de Ruta) */
+        .roadmap-list { list-style: none; padding: 0; margin: 20px 0; }
+        .roadmap-list li { background: white; margin-bottom: 12px; padding: 15px 20px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); border-left: 4px solid #2b6cb0; }
+        .roadmap-list strong { color: #2c5282; }
+
+        /* Caja de Tarifas (A consultar / Personalizado para Empresas) */
+        .price-box {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #1a202c;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1.1em;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        /* Alerta de Consultoría Gratuita */
+        .pilot-alert {
+            background-color: #ebf8ff;
+            border: 1px solid #bee3f8;
+            border-radius: 6px;
+            padding: 20px;
+            color: #2b6cb0;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 20px; color: #718096; font-size: 0.9em; margin-top: 60px; }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Sofía Emprendimiento</h1>
         <nav>
             <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
             <a href="solo.html">Servicios Solo</a>
-            <a href="empresas.html"><strong>Servicios Empresas</strong></a>
+            <a href="empresas.html" class="active">Servicios Empresas</a>
         </nav>
     </header>
 
     <main>
-        <section class="services-header">
-            <h2>Consultoría Estratégica y Desarrollo Corporativo</h2>
-            <p style="font-size: 1.2em; color: #4a5568;">Impulsamos el rendimiento de tu negocio. Diseñamos soluciones a la medida de tu equipo para automatizar procesos, mejorar la presencia digital y escalar tus resultados de forma sostenible.</p>
-        </section>
+        <div class="promo-card">
+            <h2>¿Quieres escalar tu negocio?</h2>
+            <p>Descubre el Programa de Consultoría Estratégica para Equipos.</p>
+            <a href="#programa">Ver Soluciones &rarr;</a>
+        </div>
 
-        <section class="services-grid">
-            <div class="service-card">
-                <h3>1. Optimización y Estructura Organizacional</h3>
-                <p>Analizamos tus procesos internos actuales para eliminar cuellos de botella, optimizar los flujos de trabajo y mejorar sustancialmente la productividad general del equipo.</p>
+        <div id="programa">
+            <h2 class="program-title">Para Empresas: Consultoría Estratégica y Desarrollo Corporativo</h2>
+            
+            <p><span class="section-label">A quién va dirigido:</span> Pymes, negocios en marcha y sociedades que experimentan problemas de organización, estancamiento en ventas o necesitan digitalizar sus operaciones.</p>
+            
+            <p class="section-label">Líneas de Actuación Estratégica:</p>
+            
+            <ul class="roadmap-list">
+                <li><strong>Área 1:</strong> Optimización y Estructura Organizacional (Eliminación de cuellos de botella).</li>
+                <li><strong>Área 2:</strong> Digitalización Integral y Despliegue de Estrategia Web Corporativa.</li>
+                <li><strong>Área 3:</strong> Automatización de Procesos y Sistemas de Atracción de Clientes.</li>
+                <li><strong>Área 4:</strong> Capacitación en Liderazgo y Alineación de Equipos de Trabajo.</li>
+            </ul>
+
+            <div class="price-box">
+                Tarifa: Presupuesto a medida según los objetivos y tamaño del equipo
             </div>
-            <div class="service-card">
-                <h3>2. Digitalización y Estrategia Web</h3>
-                <p>Desarrollo y diseño de plataformas corporativas sólidas junto con el despliegue de sistemas digitales avanzados para automatizar la captación e interacción recurrente con tus clientes.</p>
+
+            <div class="pilot-alert">
+                📊 <strong>Sesión de Diagnóstico Inicial:</strong> Agenda una primera llamada estratégica de 30 minutos 100% gratuita para evaluar tu caso.
             </div>
-            <div class="service-card">
-                <h3>3. Capacitación y Liderazgo Corporativo</h3>
-                <p>Talleres prácticos integrales y programas de formación continua para alinear las capacidades operativas de tu equipo humano con los objetivos reales de crecimiento del negocio.</p>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer>
         &copy; 2026 Sofía Emprendimiento. Todos los derechos reservados.
     </footer>
+
 </body>
 </html>
