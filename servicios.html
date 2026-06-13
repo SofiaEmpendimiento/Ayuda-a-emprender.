@@ -2,100 +2,74 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Servicios - Particulares y Empresas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios - Sofía Emprendimiento</title>
     <style>
-        :root { --secondary: #3498db; --primary: #2c3e50; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; scroll-behavior: smooth; }
-        body { background-color: #fcfcfc; color: #333; line-height: 1.6; }
-        nav { background: #fff; padding: 15px 20px; display: flex; justify-content: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;}
-        nav ul { list-style: none; display: flex; gap: 30px; }
-        nav ul li a { text-decoration: underline; color: var(--primary); font-weight: bold; }
-        nav ul li a:hover { color: var(--secondary); }
-        .container { max-width: 800px; margin: 50px auto; padding: 20px; }
-        h1 { text-align: center; color: var(--primary); margin-bottom: 40px; }
-        .service { background: white; padding: 35px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 40px; scroll-margin-top: 90px;}
-        .service h2 { color: var(--primary); margin-bottom: 15px; border-bottom: 2px solid #edf2f7; padding-bottom: 10px; }
-        .sub-cat { background: #f8fafc; border-left: 4px solid var(--secondary); padding: 20px; margin: 20px 0; border-radius: 0 4px 4px 0; }
-        .sub-cat h4 { color: var(--primary); margin-bottom: 10px; font-size: 18px; }
-        ul, ol { padding-left: 20px; margin: 15px 0; }
-        li { margin-bottom: 8px; }
-        .price { font-size: 18px; font-weight: bold; color: var(--primary); margin-top: 10px; display: inline-block; background: #edf2f7; padding: 6px 12px; border-radius: 4px; }
-        .promo { background: #fff3cd; color: #856404; padding: 15px; margin-top: 20px; font-weight: bold; border-radius: 5px; border: 1px solid #ffeeba; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #f7fafc; }
+        header { background-color: #1a365d; color: white; padding: 20px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 1.1em; }
+        nav a:hover { text-decoration: underline; }
+        
+        main { max-width: 1000px; margin: 40px auto; padding: 0 20px; text-align: center; }
+        .page-title { color: #1a365d; font-size: 2.5em; margin-bottom: 10px; }
+        .page-subtitle { color: #4a5568; font-size: 1.2em; margin-bottom: 40px; }
+        
+        /* Contenedor de las dos secciones */
+        .services-container { display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
+        
+        /* Caja de cada apartado */
+        .service-box { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 30px; flex: 1; min-width: 280px; max-width: 450px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .service-box:hover { transform: translateY(-5px); }
+        
+        /* Diferenciación de colores en los bordes superiores */
+        .box-individual { border-top: 6px solid #319795; }
+        .box-empresa { border-top: 6px solid #2b6cb0; }
+        
+        .service-box h2 { color: #1a365d; font-size: 1.8em; margin-top: 0; }
+        .service-box p { color: #4a5568; font-size: 1.1em; margin-bottom: 25px; min-height: 80px; }
+        
+        /* Botones personalizados */
+        .btn-box { display: inline-block; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; color: white; }
+        .btn-individual { background-color: #319795; }
+        .btn-individual:hover { background-color: #287a78; }
+        .btn-empresa { background-color: #2b6cb0; }
+        .btn-empresa:hover { background-color: #1f4e80; }
+        
+        footer { text-align: center; padding: 20px; color: #718096; font-size: 0.9em; margin-top: 60px; }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Sofía Emprendimiento</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html"><strong>Servicios</strong></a>
+            <a href="solo.html">Servicios Solo</a>
+            <a href="empresas.html">Servicios Empresas</a>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <main>
+        <h1 class="page-title">¿Cómo te puedo ayudar?</h1>
+        <p class="page-subtitle">Selecciona la opción que mejor se adapte a tu situación actual para ver los servicios disponibles.</p>
 
-    <div class="container">
-        <h1>Nuestros Servicios</h1>
+        <div class="services-container">
+            <div class="service-box box-individual">
+                <h2>👤 Servicios Individuales</h2>
+                <p>Para personas que están en la búsqueda de su propósito, profesionales independientes o emprendedores que quieren arrancar un proyecto desde cero de manera guiada.</p>
+                <a href="solo.html" class="btn-box btn-individual">Ver Servicios Individuales</a>
+            </div>
 
-        <div id="particulares" class="service">
-            <h2>Para Particulares: Programa de Transformación Integral (Método E')</h2>
-            <p><strong>A quién va dirigido:</strong> Profesionales bloqueados, con síndrome del impostor, miedo al rechazo o patrones de inferioridad que sabotean su éxito laboral.</p>
-            <h3 style="margin-top: 20px; font-size: 18px;">La Hoja de Ruta (6 Pasos en 3 meses):</h3>
-            <ol>
-                <li><strong>Paso 1:</strong> Auditoría 360 y Desmontando Bloqueos.</li>
-                <li><strong>Paso 2:</strong> Arqueología del Talento (Tu Mapa de Resiliencia).</li>
-                <li><strong>Paso 3:</strong> Filtro de Propósito (Tu Diana de Objetivos).</li>
-                <li><strong>Paso 4:</strong> Diseño del Plan por Hitos.</li>
-                <li><strong>Paso 5:</strong> Gestión del Fracaso y la Procrastinación.</li>
-                <li><strong>Paso 6:</strong> Entrega de la Brújula de Autogestión.</li>
-            </ol>
-            <span class="price">Tarifa: 720 € (o 3 cuotas de 240 €/mes)</span>
-            <div class="promo">🚀 Lanzamiento Piloto: 2 Plazas gratuitas a cambio de testimonio real (Convocatoria Septiembre).</div>
+            <div class="service-box box-empresa">
+                <h2>🏢 Servicios para Empresas</h2>
+                <p>Para pymes, negocios en marcha y equipos de trabajo que buscan optimizar sus procesos internos, digitalizar su estrategia y escalar sus ventas al siguiente nivel.</p>
+                <a href="empresas.html" class="btn-box btn-empresa">Ver Servicios para Empresas</a>
+            </div>
         </div>
+    </main>
 
-        <div id="empresas" class="service">
-            <h2>Para Empresas: Auditoría y Análisis del Sistema Organizativo</h2>
-            <p><strong>El Problema que solucionas:</strong> Equipos desmotivados, alta rotación de personal, fallos en procesos de selección o conflictos internos que paralizan la productividad empresarial.</p>
-            
-            <h3 style="margin-top: 25px; color: var(--primary);">Catálogo de Servicios según Dimensión del Personal:</h3>
-
-            <div class="sub-cat">
-                <h4>📊 Microempresas y Startups (Menos de 10 empleados)</h4>
-                <p>Enfoque ágil para asentar las bases de la comunicación, definir roles claros y evitar los vicios organizacionales antes del crecimiento estructural.</p>
-                <ul>
-                    <li>Diagnóstico exprés del clima interno.</li>
-                    <li>Informe estratégico con reajuste directo de procesos.</li>
-                    <li>1 Taller práctico de resolución de conflictos de 4 horas.</li>
-                </ul>
-                <span class="price">Tarifa Estimada: Desde 950 €</span>
-            </div>
-
-            <div class="sub-cat">
-                <h4>🏢 Medianas Organizaciones (De 10 a 50 empleados)</h4>
-                <p>Optimización de la estructura de mandos intermedios, atenuación del estrés laboral e intervención directa sobre los cuellos de botella informativos.</p>
-                <ul>
-                    <li>Diagnóstico estructural completo.</li>
-                    <li>Observación Conductual In Situ (Ficha de Observación en reuniones reales).</li>
-                    <li>Informe Estratégico de Soluciones con planes de conciliación.</li>
-                    <li>2 Talleres in-company (Habilidades blandas y Asertividad).</li>
-                </ul>
-                <span class="price">Tarifa Estimada: Desde 1.850 €</span>
-            </div>
-
-            <div class="sub-cat" style="border-left-color: #e74c3c;">
-                <h4>🏬 Grandes Estructuras / Centros Macrogrupales (Más de 50 empleados)</h4>
-                <p>Intervención socioeducativa y estratégica profunda. Diseñado para mitigar la alta rotación, reestructurar sistemas de selección disfuncionales y renovar liderazgos desgastados.</p>
-                <ul>
-                    <li>Auditoría sistémica profunda por departamentos.</li>
-                    <li>Observación conductual prolongada en diferentes entornos de trabajo.</li>
-                    <li>Diseño a medida de protocolos internos de regulación conductual y bienestar.</li>
-                    <li>Plan formativo integral para mandos directivos e intermedios (Banco de niebla, gestión del estrés).</li>
-                </ul>
-                <span class="price">Tarifa: Presupuesto a medida (A consultar)</span>
-            </div>
-
-        </div>
-    </div>
-
+    <footer>
+        &copy; 2026 Sofía Emprendimiento. Todos los derechos reservados.
+    </footer>
 </body>
 </html>
